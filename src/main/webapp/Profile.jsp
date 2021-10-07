@@ -19,6 +19,7 @@
 	<c:out value="${label.name}" />
 	-->
 	
+	<!--
 	<sql:setDataSource var="db" driver="com.mysql.jdbc.Driver" url="jdbc:mysql://localhost/seva_sample" user="root" password=""/>
 	
 	<sql:query var="rs" dataSource="${db}" >select * from data</sql:query>
@@ -29,6 +30,19 @@
 		
 		<br/>
 	</c:forEach>
+	
+	-->
+	
+	<!--  FILTER -->
+	
+	<form action="DemoServlet">
+		
+		<input type="text" name="aid" /> <br/>
+		<input type="text" name="aname" /> <br/>
+		
+		<input type="submit"/>
+		
+	</form>
 	
 </body>
 </html>
